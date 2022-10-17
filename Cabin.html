@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO 2</title>
+    <!--<link href="css/estilos.css" rel="stylesheet">-->
+	<script  src="js/solicitudes.js"></script>
+			
+	<script src="https://code.jquery.com/jquery-3.6.1.js" 
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+		crossorigin="anonymous">
+	</script>
+
+</head>
+
+
+<body>
+	<center>
+	
+	<h1><span style="color: #3393FF;">BASE DE DATOS DE CABAÑAS</h1>
+	
+	<hr style="height:20px; border-width:0;background-color: #F4F7FA">
+	<br>
+	<fieldset style="width: 600px;">
+	<legend>Informacion de cabañas:</legend>
+	
+	<table border="0">
+	
+	<tr>
+		<th><span style="color:#3393FF;"><b>ID:</b></th>
+		<td>			
+			<input type="number" id="idCabin" style="width:270px;" placeholder="Ingresa un ID">
+			<input type="button" id="btnBuscarID" value="Buscar ID" onclick="cabinID('#id')"<span style="color:#3393FF;">
+		</td>	
+	</tr>
+	
+	<tr>
+		<th><span style="color: #3393FF; align"><b>Brand:</b></th>
+		<td>
+			
+			<input type="text" id="idBrand" style="width: 350px;">		
+		</td>	
+	
+	</tr>
+	
+	<tr>
+		<th><span style="color:#3393FF;"><b>Rooms:</b></th>
+		<td>
+			
+			<input type="number" id="idRooms" style="width: 350px;" >		
+		</td>	
+	
+	</tr>
+	
+	<tr>
+		<th><span style="color: #3393FF;"><b>Category ID:</b></th>
+		<td>
+			
+			<input type="number" id="CategoryID" style="width: 350px;">		
+		</td>	
+	
+	</tr>
+	
+	<tr>
+		<th><span style="color: #3393FF;"><b>Name:</b></th>
+		<td>
+			
+			<input type="text" id="idName" style="width: 350px;">		
+		</td>	
+	
+	</tr>
+	
+</table>
+
+</fieldset>
+
+	<br>
+
+	<input type="button" value="Guardar Cabaña" onclick="guardarCabin()">
+	<input type="button" value="Mostrar Cabañas" onclick="consultarCabin()">
+	<input type="button" value="Editar Cabaña" onclick="editarCabin()">
+	<br>
+
+			<hr style="height:2px; border-width:0;background-color: #F4F7FA">
+			<h2>CABAÑAS REGISTRADAS:</h2>
+			<hr style="width: 460px;">
+			<div id="listacabines"></div>
+			<br><br>
+			<br>
+			<a href="index.html">Regresar a la pagina de inicio</a> 
+			<br>
+			<br>
+</center>
+
+</body>
+
+
+</html>

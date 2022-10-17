@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <title>RETO 2/Clientes</title>
+</head>
+    <!--<link href="css/estilos.css" rel="stylesheet">-->
+	<script  src="js/solicitudes.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" 
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+		crossorigin="anonymous">
+	</script>
+
+	<body>
+		<center>
+		<h1>RETO 2/CLIENTES</h1>
+		
+		<fieldset style="width: 450px;">
+			<legend>Informacion de clientes:</legend>
+			
+			<table border="0">
+			
+			<tr>
+			<th><span style="color:#3393FF;"><b>ID de cliente</b></th>
+			<td>			
+				<input type="number" id="idClient" style="width: 64%;" placeholder="Ingresa un ID">
+				<input type="button" id="btnBuscarID" value="Buscar ID" onclick="consultaID()">
+			</td>	
+			</tr>
+			
+			<tr>
+			<th><span style="color: #3393FF; align"><b>Nombre de cliente</b></th>
+			<td>
+				
+				<input type="text" id="nombreClient" style="width: 95%;" placeholder="Ingresa un nombre">		
+			</td>	
+		
+			</tr>
+			
+			<tr>
+			<th><span style="color: #3393FF; align"><b>Correo de cliente</b></th>
+			<td>
+				
+				<input type="text" id="mailClient" style="width: 95%;" placeholder="Ingresa un correo">		
+			</td>	
+		
+			</tr>
+			
+			<tr>
+			<th><span style="color:#3393FF;"><b>Edad de cliente</b></th>
+			<td>			
+				<input type="number" id="edadClient" style="width: 95%;" placeholder="Ingresa la edad">
+			</td>	
+			</tr>
+			
+			</table>
+						
+		</fieldset>		
+			<br>
+
+				<input type="button" value="Guardar cliente" onclick="guardarCliente()">
+				<input type="button" value="Mostrar clientes" onclick="consultarclientes()">
+				<input type="button" value="Editar cliente" onclick="editarCliente()">
+				<br>
+		
+		
+			<hr style="height:2px; border-width:0;background-color: #F4F7FA">
+			<h2>CLIENTES REGISTRADOS:</h2>
+			<hr style="width: 460px;">
+			<div id="listaClientes"></div>
+			<br><br>
+			<br>
+			<a href="index.html">Regresar a la pagina de inicio</a> 
+			<br>
+			<br>
+
+		</center>
+	</body>
+	
+</html>
